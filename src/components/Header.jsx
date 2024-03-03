@@ -14,18 +14,18 @@ const HeaderStyle = styled.div`
 const Select = styled.button``;
 
 function Header({ width }) {
-  const [icon, setIcon] = useState("menyu.svg");
+  const [icon, setIcon] = useState("/menyu.svg");
 
   const [count, setCount] = useState(true);
 
   const menyuEl = useRef();
   const handleClick = () => {
     if (count) {
-      setIcon("back.svg");
+      setIcon("/back.svg");
       menyuEl.current.classList.remove("hidden");
       setCount(false);
     } else if (!count) {
-      setIcon("menyu.svg");
+      setIcon("/menyu.svg");
       menyuEl.current.classList.add("hidden");
       setCount(true);
     }

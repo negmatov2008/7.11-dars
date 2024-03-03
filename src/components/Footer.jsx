@@ -22,7 +22,7 @@ function Footer() {
   return (
     <>
       <FooterStyle>
-        <img className="mr-[8px]" src="logoDark.svg" alt="" />
+        <img className="mr-[8px]" src="/logoDark.svg" alt="" />
         <ul className="flex w-[95px]  flex-col    sm:flex-1 sm:flex-row gap-[32px] ">
           <li className="w-[95px] text-center">
             <Link className="uppercase text-[12px] text-[#fff]" to={"/"}>
@@ -43,7 +43,7 @@ function Footer() {
             </Link>
           </li>
         </ul>
-        <img  src="links.svg" alt="" />
+        <img  src="/links.svg" alt="" />
       </FooterStyle>
     </>
   );

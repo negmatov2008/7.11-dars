@@ -10,6 +10,7 @@ import Insure from "./pages/portfolio/insure/Insure";
 import Faylo from "./pages/portfolio/faylo/Faylo";
 import { ThemeProvider } from "styled-components";
 import Root from "./components/Root";
+import PortRoot from "./pages/portfolio/PortRoot";
 
 const router = createBrowserRouter([
   {
@@ -22,8 +23,12 @@ const router = createBrowserRouter([
       },
       {
         path: "/portfolio/",
-        element: <Portfolio />,
+        element: <PortRoot />,
         children: [
+          {
+            path: "",
+            element: <Portfolio />,
+          },
           {
             path: "manage",
             element: <Manage />,
